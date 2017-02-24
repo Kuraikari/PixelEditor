@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pixeleditor_core
 {
-    public partial class Form1 : Form
+    public partial class frmPixelEditor : Form
     {
-        public Form1()
+        public frmPixelEditor()
         {
             InitializeComponent();
         }
