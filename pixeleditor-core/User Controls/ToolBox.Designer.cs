@@ -37,7 +37,7 @@
             // lblSize
             // 
             this.lblSize.AutoSize = true;
-            this.lblSize.Location = new System.Drawing.Point(3, 34);
+            this.lblSize.Location = new System.Drawing.Point(3, 24);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(27, 13);
             this.lblSize.TabIndex = 0;
@@ -46,7 +46,7 @@
             // lblOpacity
             // 
             this.lblOpacity.AutoSize = true;
-            this.lblOpacity.Location = new System.Drawing.Point(3, 60);
+            this.lblOpacity.Location = new System.Drawing.Point(3, 53);
             this.lblOpacity.Name = "lblOpacity";
             this.lblOpacity.Size = new System.Drawing.Size(43, 13);
             this.lblOpacity.TabIndex = 1;
@@ -54,14 +54,14 @@
             // 
             // txtSize
             // 
-            this.txtSize.Location = new System.Drawing.Point(52, 31);
+            this.txtSize.Location = new System.Drawing.Point(52, 21);
             this.txtSize.Name = "txtSize";
             this.txtSize.Size = new System.Drawing.Size(100, 20);
             this.txtSize.TabIndex = 2;
             // 
             // txtOpacity
             // 
-            this.txtOpacity.Location = new System.Drawing.Point(52, 57);
+            this.txtOpacity.Location = new System.Drawing.Point(52, 50);
             this.txtOpacity.Name = "txtOpacity";
             this.txtOpacity.Size = new System.Drawing.Size(100, 20);
             this.txtOpacity.TabIndex = 3;
@@ -75,7 +75,7 @@
             this.Controls.Add(this.lblOpacity);
             this.Controls.Add(this.lblSize);
             this.Name = "ToolBox";
-            this.Size = new System.Drawing.Size(204, 382);
+            this.Size = new System.Drawing.Size(248, 462);
             this.ResumeLayout(false);
             this.PerformLayout();
 

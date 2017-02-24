@@ -36,25 +36,25 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsdEdit = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsdHelp = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.imgListOpenPictures = new System.Windows.Forms.ImageList(this.components);
+            this.pnlPicture = new System.Windows.Forms.Panel();
+            this.lblColorMode = new System.Windows.Forms.Label();
+            this.lblPicName = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tsdEdit = new System.Windows.Forms.ToolStripDropDownButton();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsdHelp = new System.Windows.Forms.ToolStripDropDownButton();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutPixelEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.imgListOpenPictures = new System.Windows.Forms.ImageList(this.components);
-            this.pnlPicture = new System.Windows.Forms.Panel();
-            this.lblPicName = new System.Windows.Forms.Label();
-            this.lblColorMode = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.pnlPicture.SuspendLayout();
@@ -91,107 +91,31 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // tsdEdit
-            // 
-            this.tsdEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsdEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem});
-            this.tsdEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsdEdit.Image")));
-            this.tsdEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsdEdit.Name = "tsdEdit";
-            this.tsdEdit.Size = new System.Drawing.Size(40, 22);
-            this.tsdEdit.Text = "Edit";
-            // 
-            // tsdHelp
-            // 
-            this.tsdHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsdHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewHelpToolStripMenuItem,
-            this.aboutPixelEditorToolStripMenuItem});
-            this.tsdHelp.Image = ((System.Drawing.Image)(resources.GetObject("tsdHelp.Image")));
-            this.tsdHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsdHelp.Name = "tsdHelp";
-            this.tsdHelp.Size = new System.Drawing.Size(45, 22);
-            this.tsdHelp.Text = "Help";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.redoToolStripMenuItem.Text = "Redo";
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // viewHelpToolStripMenuItem
-            // 
-            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.viewHelpToolStripMenuItem.Text = "View Help";
-            // 
-            // aboutPixelEditorToolStripMenuItem
-            // 
-            this.aboutPixelEditorToolStripMenuItem.Name = "aboutPixelEditorToolStripMenuItem";
-            this.aboutPixelEditorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.aboutPixelEditorToolStripMenuItem.Text = "About PixelEditor";
             // 
             // fileSystemWatcher1
             // 
@@ -214,6 +138,15 @@
             this.pnlPicture.Size = new System.Drawing.Size(772, 501);
             this.pnlPicture.TabIndex = 1;
             // 
+            // lblColorMode
+            // 
+            this.lblColorMode.AutoSize = true;
+            this.lblColorMode.Location = new System.Drawing.Point(3, 13);
+            this.lblColorMode.Name = "lblColorMode";
+            this.lblColorMode.Size = new System.Drawing.Size(76, 13);
+            this.lblColorMode.TabIndex = 1;
+            this.lblColorMode.Text = "COLORMODE";
+            // 
             // lblPicName
             // 
             this.lblPicName.AutoSize = true;
@@ -223,14 +156,9 @@
             this.lblPicName.TabIndex = 0;
             this.lblPicName.Text = "PICTURE NAME";
             // 
-            // lblColorMode
+            // openFileDialog1
             // 
-            this.lblColorMode.AutoSize = true;
-            this.lblColorMode.Location = new System.Drawing.Point(3, 13);
-            this.lblColorMode.Name = "lblColorMode";
-            this.lblColorMode.Size = new System.Drawing.Size(76, 13);
-            this.lblColorMode.TabIndex = 1;
-            this.lblColorMode.Text = "COLORMODE";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // pictureBox1
             // 
@@ -242,9 +170,81 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // openFileDialog1
+            // tsdEdit
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.tsdEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsdEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.tsdEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsdEdit.Image")));
+            this.tsdEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsdEdit.Name = "tsdEdit";
+            this.tsdEdit.Size = new System.Drawing.Size(40, 22);
+            this.tsdEdit.Text = "Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.undoToolStripMenuItem.Text = "Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.redoToolStripMenuItem.Text = "Redo";
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.cutToolStripMenuItem.Text = "Cut";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // tsdHelp
+            // 
+            this.tsdHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsdHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewHelpToolStripMenuItem,
+            this.aboutPixelEditorToolStripMenuItem});
+            this.tsdHelp.Image = ((System.Drawing.Image)(resources.GetObject("tsdHelp.Image")));
+            this.tsdHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsdHelp.Name = "tsdHelp";
+            this.tsdHelp.Size = new System.Drawing.Size(45, 22);
+            this.tsdHelp.Text = "Help";
+            // 
+            // viewHelpToolStripMenuItem
+            // 
+            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.viewHelpToolStripMenuItem.Text = "View Help";
+            // 
+            // aboutPixelEditorToolStripMenuItem
+            // 
+            this.aboutPixelEditorToolStripMenuItem.Name = "aboutPixelEditorToolStripMenuItem";
+            this.aboutPixelEditorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.aboutPixelEditorToolStripMenuItem.Text = "About PixelEditor";
             // 
             // frmPixelEditor
             // 
@@ -255,6 +255,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmPixelEditor";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmPixelEditor_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();

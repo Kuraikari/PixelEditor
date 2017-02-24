@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace pixeleditor_core
 {
-    public partial class frmPixelEditor : Form
+    public partial class ToolBoxForm : Form
     {
-        ToolBoxForm tbf = new ToolBoxForm();
-
-        public frmPixelEditor()
+        public ToolBoxForm()
         {
             InitializeComponent();
         }
 
-        private void frmPixelEditor_Load(object sender, EventArgs e)
+        private void toolBox1_Load(object sender, EventArgs e)
         {
-            tbf.Activate();
-            tbf.Visible = true;
+
+        }
+
+        private void colorList1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
