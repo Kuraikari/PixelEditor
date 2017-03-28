@@ -59,7 +59,7 @@
             this.Controls.Add(this.toolBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ToolBoxForm";
-            this.Text = "ToolBoxForm";
+            this.Text = "Tool Box :3";
             this.TopMost = true;
             this.ResumeLayout(false);
 

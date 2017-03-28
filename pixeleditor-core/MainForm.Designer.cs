@@ -36,15 +36,6 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.imgListOpenPictures = new System.Windows.Forms.ImageList(this.components);
-            this.pnlPicture = new System.Windows.Forms.Panel();
-            this.lblColorMode = new System.Windows.Forms.Label();
-            this.lblPicName = new System.Windows.Forms.Label();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tsdEdit = new System.Windows.Forms.ToolStripDropDownButton();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +46,15 @@
             this.tsdHelp = new System.Windows.Forms.ToolStripDropDownButton();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutPixelEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.imgListOpenPictures = new System.Windows.Forms.ImageList(this.components);
+            this.pnlPicture = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblColorMode = new System.Windows.Forms.Label();
+            this.lblPicName = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.pnlPicture.SuspendLayout();
@@ -91,84 +91,27 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // imgListOpenPictures
-            // 
-            this.imgListOpenPictures.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imgListOpenPictures.ImageSize = new System.Drawing.Size(16, 16);
-            this.imgListOpenPictures.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // pnlPicture
-            // 
-            this.pnlPicture.Controls.Add(this.pictureBox1);
-            this.pnlPicture.Controls.Add(this.lblColorMode);
-            this.pnlPicture.Controls.Add(this.lblPicName);
-            this.pnlPicture.Location = new System.Drawing.Point(12, 28);
-            this.pnlPicture.Name = "pnlPicture";
-            this.pnlPicture.Size = new System.Drawing.Size(772, 501);
-            this.pnlPicture.TabIndex = 1;
-            // 
-            // lblColorMode
-            // 
-            this.lblColorMode.AutoSize = true;
-            this.lblColorMode.Location = new System.Drawing.Point(3, 13);
-            this.lblColorMode.Name = "lblColorMode";
-            this.lblColorMode.Size = new System.Drawing.Size(76, 13);
-            this.lblColorMode.TabIndex = 1;
-            this.lblColorMode.Text = "COLORMODE";
-            // 
-            // lblPicName
-            // 
-            this.lblPicName.AutoSize = true;
-            this.lblPicName.Location = new System.Drawing.Point(3, 0);
-            this.lblPicName.Name = "lblPicName";
-            this.lblPicName.Size = new System.Drawing.Size(88, 13);
-            this.lblPicName.TabIndex = 0;
-            this.lblPicName.Text = "PICTURE NAME";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(772, 468);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // tsdEdit
             // 
@@ -246,6 +189,69 @@
             this.aboutPixelEditorToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.aboutPixelEditorToolStripMenuItem.Text = "About PixelEditor";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // imgListOpenPictures
+            // 
+            this.imgListOpenPictures.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imgListOpenPictures.ImageSize = new System.Drawing.Size(16, 16);
+            this.imgListOpenPictures.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pnlPicture
+            // 
+            this.pnlPicture.Controls.Add(this.pictureBox1);
+            this.pnlPicture.Controls.Add(this.lblColorMode);
+            this.pnlPicture.Controls.Add(this.lblPicName);
+            this.pnlPicture.Location = new System.Drawing.Point(12, 28);
+            this.pnlPicture.Name = "pnlPicture";
+            this.pnlPicture.Size = new System.Drawing.Size(772, 501);
+            this.pnlPicture.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(772, 468);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblColorMode
+            // 
+            this.lblColorMode.AutoSize = true;
+            this.lblColorMode.Location = new System.Drawing.Point(3, 13);
+            this.lblColorMode.Name = "lblColorMode";
+            this.lblColorMode.Size = new System.Drawing.Size(76, 13);
+            this.lblColorMode.TabIndex = 1;
+            this.lblColorMode.Text = "COLORMODE";
+            // 
+            // lblPicName
+            // 
+            this.lblPicName.AutoSize = true;
+            this.lblPicName.Location = new System.Drawing.Point(3, 0);
+            this.lblPicName.Name = "lblPicName";
+            this.lblPicName.Size = new System.Drawing.Size(88, 13);
+            this.lblPicName.TabIndex = 0;
+            this.lblPicName.Text = "PICTURE NAME";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "png";
+            this.saveFileDialog1.FileName = "pixel-picture";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // frmPixelEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,7 +260,7 @@
             this.Controls.Add(this.pnlPicture);
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmPixelEditor";
-            this.Text = "Form1";
+            this.Text = "Pixel Editor :3";
             this.Load += new System.EventHandler(this.frmPixelEditor_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

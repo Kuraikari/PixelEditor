@@ -24,5 +24,13 @@ namespace pixeleditor_core
             tbf.Activate();
             tbf.Visible = true;
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Title = "Save pixeled Picture";
+            saveFileDialog1.InitialDirectory = "C:/user/public/pictures";
+            saveFileDialog1.AddExtension = true;
+            saveFileDialog1.ShowDialog();
+        }
     }
 }
