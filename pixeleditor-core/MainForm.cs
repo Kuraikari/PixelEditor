@@ -12,7 +12,11 @@ namespace pixeleditor_core
 {
     public partial class frmPixelEditor : Form
     {
+        
+
         ToolBoxForm tbf = new ToolBoxForm();
+        Paper paper = new Paper();
+        Bitmap picture;
 
         public frmPixelEditor()
         {
